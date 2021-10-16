@@ -1,15 +1,26 @@
-console.log('Welcome to the password validator tool')
-console.log('Please enter a password to validate')
+const readline = require('readline')
 
-let password = ""
-let response
+const reader = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+
+reader.question("Please enter a valid Password.", function(input){
+    tokens = input.split(' ')
+})
 
 
-while(response !== password) {
-    response = window.prompt("Enter Password")
-}
 
-alert("This password works!")
+
+// let password = "key"
+// let response
+
+
+// while(response !== password) {
+//     response = reader.question("Enter Password")
+// }
+
+// alert("This password works!")
 
 
 
