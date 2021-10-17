@@ -7,9 +7,9 @@ const reader = readline.createInterface({
 
 reader.question("Please enter a valid Password.", function(input){
     tokens = input.split(' ')
-})
 
-passWord = tokens[0]
+
+passWord = String(tokens[0])
 
 
   if (passWord.length < 10) {
@@ -19,7 +19,10 @@ passWord = tokens[0]
   console.log('This password is valid')
 }
 
+reader.close()
 
+
+})
 
 
 
