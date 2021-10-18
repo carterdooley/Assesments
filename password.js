@@ -4,7 +4,7 @@ const reader = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
   });
-while (passWord.length < 10) {
+
 reader.question("Please enter a valid Password.", function(input){
     tokens = input.split(' ')
 
@@ -23,26 +23,10 @@ reader.close()
 
 
 })
-}
+
 
 
 
 
 //Sources:
 //https://www.w3schools.com/howto/howto_js_password_validation.asp
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//https://www.youtube.com/watch?v=w6nQmCetNuQ
