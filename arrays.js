@@ -43,9 +43,22 @@ console.log(middleNums)
 */
 
 // CODE HERE
-
-let arr = [1, 35, 66, 48, 35]
+let arr = [20,40,60,80,100,120,140]
 
 function bigOrSmall (arr) {
   let answers = []
+
+for (h = 0; h < arr.length; h++){
+  if (arr[h] <= 100){
+    answers.push('small')
+    }
+    else {
+      answers.push('big')
+    }
+  }
+
+  console.log(answers)
+  return answers
 }
+
+bigOrSmall(arr)
